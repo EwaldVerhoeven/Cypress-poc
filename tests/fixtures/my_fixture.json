@@ -1,0 +1,9 @@
+{
+  "object1": {
+    "nestedItem1": "value-1",
+    "nestedItem2": "value-2",
+    "nestedObject": {
+      "doubleNested1": "double-nested-value-1"
+    }
+  }
+}
