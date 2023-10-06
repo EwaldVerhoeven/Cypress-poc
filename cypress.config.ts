@@ -6,7 +6,7 @@ export default defineConfig({
   e2e: {
     supportFile: "tests/support/e2e.ts",
     specPattern: "tests/e2e/*.cy.{js,jsx,ts,tsx}",
-    baseUrl: "https://quality-advocates.ioservice.net/dashboard",
+    baseUrl: "https://quality-advocates.ioservice.net",
     watchForFileChanges: false,
     screenshotsFolder: "tests/screenshots",
     videosFolder: "tests/videos",

@@ -1,0 +1,15 @@
+{
+  "client": {
+    "nummer": "470",
+    "achternaam": "Timmermans",
+    "nieuwAdres": {
+      "postcode": "7141DC",
+      "huisnummer": 2,
+      "straat": "Parallelweg",
+      "woonplaats": "Groenlo",
+      "gemeente": "Oost Gelre",
+      "land": "Nederland",
+      "woontype": "Onbekend"
+    }
+  }
+}

@@ -6,8 +6,9 @@ class MenuPageObject extends BasePageObject {
     cliëntButton: () => cy.get("#menu-icon-Cliënt"),
   };
 
-  navigetToCliëntpage(cliëntName: string): void {
+  navigateToClientPage(): void {
     this.menuItems.cliëntButton().should("be.visible").click();
+    this.page.title().should("eq", "Cliëntzoeken");
   }
 }
 
