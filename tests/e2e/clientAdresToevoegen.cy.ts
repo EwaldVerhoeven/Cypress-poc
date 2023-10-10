@@ -1,7 +1,11 @@
-import { adresToevoegen, auth } from "./pages";
-import { clientZoeken } from "./pages";
-import { menu } from "./pages";
-import { client } from "./pages";
+import {
+  adresToevoegen,
+  adressenOverzicht,
+  auth,
+  clientZoeken,
+  menu,
+  client,
+} from "./pages";
 
 context("initialize", () => {
   before(function () {
@@ -14,6 +18,10 @@ context("initialize", () => {
     });
     auth.login();
   });
+  after(() => {
+    adresToevoegen.saveNewAdress();
+    adressenOverzicht.removeAllAdresses();
+  });
   it("I lookup a client to add and add an adress", function () {
     // searching and selecting a client
     menu.navigateToClientPage();
@@ -21,7 +29,6 @@ context("initialize", () => {
     clientZoeken.selectTopClientInSearchResults(
       this.testdata.client.achternaam,
     );
-
     // adding an adress
     client.navigateToAlgemeen();
     client.openAdressToevoegenPage();
@@ -36,10 +43,5 @@ context("initialize", () => {
       land: this.testdata.client.nieuwAdres.land,
       woontype: this.testdata.client.nieuwAdres.woontype,
     });
-
-    adresToevoegen.saveNewAdress();
-
-    
-    cy.wait(5000)
   });
 });
