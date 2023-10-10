@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run eslint:check"
+      "pre-commit": "npx prettier . --check"
     }
   }
 }
