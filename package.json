@@ -18,7 +18,13 @@
     "cypress": "^13.1.0",
     "eslint": "^8.50.0",
     "eslint-plugin-cypress": "^2.14.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:format && npm run eslint:check"
+    }
   }
 }
