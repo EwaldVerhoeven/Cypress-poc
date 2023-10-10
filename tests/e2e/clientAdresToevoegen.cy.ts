@@ -19,7 +19,6 @@ context("initialize", () => {
     auth.login();
   });
   after(() => {
-    adresToevoegen.saveNewAdress();
     adressenOverzicht.removeAllAdresses();
   });
   it("I lookup a client to add and add an adress", function () {
@@ -43,5 +42,6 @@ context("initialize", () => {
       land: this.testdata.client.nieuwAdres.land,
       woontype: this.testdata.client.nieuwAdres.woontype,
     });
+    adresToevoegen.saveNewAdress();
   });
 });
