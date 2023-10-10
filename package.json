@@ -8,7 +8,8 @@
     "prettier:check": "npx prettier . --check",
     "eslint:check": "npx eslint .",
     "cy:open": "cypress open",
-    "cy:headless:all": "cypress run"
+    "cy:headless:all": "cypress run",
+    "prepare": "husky install"
   },
   "author": "Ewald Verhoeven",
   "license": "ISC",
@@ -18,13 +19,8 @@
     "cypress": "^13.1.0",
     "eslint": "^8.50.0",
     "eslint-plugin-cypress": "^2.14.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'pre-commit hook working' "
-    }
   }
 }
