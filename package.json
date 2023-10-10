@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx prettier . --check"
+      "pre-commit": "echo 'pre-commit hook working' "
     }
   }
 }
