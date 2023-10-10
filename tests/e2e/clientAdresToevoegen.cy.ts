@@ -7,7 +7,7 @@ import {
   client,
 } from "./pages";
 
-context("initialize", () => {
+describe("initialize", () => {
   before(function () {
     cy.fixture("clientData.json").then((data) => {
       const timestamp = Date.now();
@@ -19,9 +19,9 @@ context("initialize", () => {
     auth.login();
   });
   after(() => {
-    adressenOverzicht.removeAllAdresses();
+    adressenOverzicht.removeAllAdresses(); // TODO: Refactor to API request.
   });
-  it("I lookup a client to add and add an adress", function () {
+  it("I lookup a client to add a new adress", function () {
     // searching and selecting a client
     menu.navigateToClientPage();
     clientZoeken.searchClient(this.testdata.client.nummer);
