@@ -17,7 +17,7 @@ class AdresToevoegenPageObject extends BasePageObject {
     woonplaatsInput: () => cy.get("[id='form:cityIt:cityIt']"),
     gemeenteInput: () => cy.get("[id='form:municipalityIt:municipalityIt']"),
     landInput: () => cy.get("[id='form:countrySom:countrySom_label']"),
-    woontypeInput: () => cy.get("[id='form:j_idt286:j_idt286_label']"),
+    woontypeInput: () => cy.get("[id='form:j_idt277:j_idt277_label']"),
   };
 
   readonly contactInformatie = {};

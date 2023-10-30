@@ -5,7 +5,7 @@ class ClientZoekenPageObject extends BasePageObject {
   readonly lijstWeergave = {
     zoekenInput: () =>
       cy.get("[id='form:client-search-tab:clientSearchInput']"),
-    zoekenIcon: () => cy.get("[id='form:client-search-tab:j_idt161']"),
+    zoekenIcon: () => cy.get("[id='form:client-search-tab:j_idt153']"),
     searchResults: {
       topRow: () => cy.get("tr[data-ri='0']"),
     },
